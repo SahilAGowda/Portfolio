@@ -1,283 +1,303 @@
-<!-- </* Project Section Base Styles */> -->
-
 <style>
-.portfolio.section {
-  padding: 60px 0;
-  background: var(--bg-black-100);
-}
-
-.portfolio .container1 {
-  padding-right: 15px;
-  padding-left: 15px;
-  margin: auto;
-  max-width: 1200px;
-}
-
-.portfolio .section-title {
-  margin-bottom: 40px;
-}
-
-/* Grid Layout */
-.portfolio .row {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-  justify-content: center;
-}
-
-/* Portfolio Items */
-.portfolio-item {
-  flex: 0 0 calc(33.333% - 30px);
-  max-width: calc(33.333% - 30px);
-  margin: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.portfolio-item-inner {
-  border: 6px solid var(--bg-black-100);
-  border-radius: 10px;
-  overflow: hidden;
-  transition: all 0.3s ease;
-}
-
-.portfolio-item-inner:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
-}
-
-/* Image Container */
-.portfolio-img {
-  position: relative;
-  overflow: hidden;
-}
-
-.portfolio-img img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-  transition: transform 0.3s ease;
-}
-
-.portfolio-item:hover .portfolio-img img {
-  transform: scale(1.1);
-}
-
-/* Project Info */
-.portfolio-info {
-  padding: 20px;
-  background: var(--bg-black-100);
-  border-top: 1px solid var(--bg-black-50);
-}
-
-.portfolio-info h3 {
-  font-size: 18px;
-  font-weight: 700;
-  color: var(--text-black-900);
-  margin-bottom: 10px;
-}
-
-.portfolio-info .duration {
-  color: var(--text-black-700);
-  font-size: 14px;
-  margin-bottom: 15px;
-}
-
-/* Tech Stack Tags */
-.tech-stack {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 15px;
-}
-
-.tech-tag {
-  padding: 4px 12px;
-  border-radius: 15px;
-  background: var(--skin-color);
-  color: #ffffff;
-  font-size: 12px;
-  transition: all 0.3s ease;
-}
-
-/* View Project Button */
-.view-project {
-  display: inline-block;
-  padding: 8px 20px;
-  background: var(--skin-color);
-  color: #ffffff;
-  border-radius: 20px;
-  font-weight: 500;
-  font-size: 14px;
-  text-decoration: none;
-  transition: all 0.3s ease;
-}
-
-.view-project:hover {
-  background: var(--skin-color);
-  opacity: 0.9;
-  transform: translateY(-2px);
-}
-
-/* Responsive Design */
-@media (max-width: 1199px) {
-  .portfolio-item {
-    flex: 0 0 calc(50% - 30px);
-    max-width: calc(50% - 30px);
-  }
-}
-
-@media (max-width: 767px) {
-  .portfolio-item {
-    flex: 0 0 calc(100% - 30px);
-    max-width: calc(100% - 30px);
-  }
-  
-  .portfolio-info h3 {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 575px) {
-  .tech-stack {
-    gap: 5px;
-  }
-  
-  .tech-tag {
-    padding: 3px 8px;
-    font-size: 11px;
-  }
-}
-</style>
-  
-  <section class="portfolio section" id="portfolio">
-      <div class="container">
-          <div class="row">
-              <div class="section-title padd-15">
-                  <h2>PROJECTS</h2>
-              </div>
-          </div>
-          <div class="row">
-              <!-- Image Quality Assessment -->
-              <div class="portfolio-item">
-                  <div class="portfolio-item-inner shadow-dark">
-                      <div class="portfolio-img">
-                          <img src="images/portfolio/image_quality_assessment.png" alt="Image Quality Assessment">
-                      </div>
-                      <div class="portfolio-info">
-                          <h3>Image Quality Assessment</h3>
-                          <div class="duration">2024</div>
-                          <div class="tech-stack">
-                              <span class="tech-tag">Python</span>
-                              <span class="tech-tag">Gradio</span>
-                              <span class="tech-tag">PyQt5</span>
-                              <span class="tech-tag">Flask</span>
-                              <span class="tech-tag">ML</span>
-                          </div>
-                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- AI Workout Monitoring -->
-              <div class="portfolio-item">
-                  <div class="portfolio-item-inner shadow-dark">
-                      <div class="portfolio-img">
-                          <img src="images/portfolio/ai_workout_monitering.png" alt="AI Workout Monitoring">
-                      </div>
-                      <div class="portfolio-info">
-                          <h3>AI Workout Monitoring</h3>
-                          <div class="duration">2023-2024</div>
-                          <div class="tech-stack">
-                              <span class="tech-tag">HTML</span>
-                              <span class="tech-tag">CSS</span>
-                              <span class="tech-tag">Python</span>
-                              <span class="tech-tag">Flask</span>
-                              <span class="tech-tag">MySQL</span>
-                          </div>
-                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Online Train Booking -->
-              <div class="portfolio-item">
-                  <div class="portfolio-item-inner shadow-dark">
-                      <div class="portfolio-img">
-                          <img src="images/portfolio/train_booking_app.avif" alt="Online Train Booking">
-                      </div>
-                      <div class="portfolio-info">
-                          <h3>Online Train Booking</h3>
-                          <div class="duration">2024</div>
-                          <div class="tech-stack">
-                              <span class="tech-tag">HTML</span>
-                              <span class="tech-tag">CSS</span>
-                              <span class="tech-tag">Bootstrap</span>
-                              <span class="tech-tag">JavaScript</span>
-                              <span class="tech-tag">Spring Boot</span>
-                          </div>
-                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Continue with the same pattern for other projects -->
-              <!-- AutoProof -->
-              <div class="portfolio-item">
-                  <div class="portfolio-item-inner shadow-dark">
-                      <div class="portfolio-img">
-                          <img src="images/portfolio/AutoProof.png" alt="AutoProof">
-                      </div>
-                      <div class="portfolio-info">
-                          <h3>AutoProof</h3>
-                          <div class="duration">2024-present</div>
-                          <div class="tech-stack">
-                              <span class="tech-tag">React</span>
-                              <span class="tech-tag">MongoDB</span>
-                              <span class="tech-tag">Cyber Tools</span>
-                          </div>
-                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Portfolio -->
-              <div class="portfolio-item">
-                  <div class="portfolio-item-inner shadow-dark">
-                      <div class="portfolio-img">
-                          <img src="images/portfolio/portfolio-1.jpg" alt="Portfolio">
-                      </div>
-                      <div class="portfolio-info">
-                          <h3>Portfolio</h3>
-                          <div class="duration">2023</div>
-                          <div class="tech-stack">
-                              <span class="tech-tag">HTML</span>
-                              <span class="tech-tag">CSS</span>
-                              <span class="tech-tag">JavaScript</span>
-                          </div>
-                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
-                      </div>
-                  </div>
-              </div>
-  
-              <!-- Tic Tac Toe -->
-              <div class="portfolio-item">
-                  <div class="portfolio-item-inner shadow-dark">
-                      <div class="portfolio-img">
-                          <img src="images/portfolio/tic_tac_toe.png" alt="Tic Tac Toe">
-                      </div>
-                      <div class="portfolio-info">
-                          <h3>Tic Tac Toe</h3>
-                          <div class="duration">2023</div>
-                          <div class="tech-stack">
-                              <span class="tech-tag">HTML</span>
-                              <span class="tech-tag">CSS</span>
-                              <span class="tech-tag">JavaScript</span>
-                          </div>
-                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </div>
-  </section>
+    /* Contact Section Base Styles */
+    .contact.section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #f6f9fc 0%, #f1f4f8 100%);
+    }
+    
+    .contact .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    /* Section Title Styles */
+    .contact .section-title {
+      text-align: center;
+      margin-bottom: 50px;
+    }
+    
+    .contact .section-title h2 {
+      font-size: 2.5rem;
+      color: #2c3e50;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 15px;
+    }
+    
+    .contact .section-title h2::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      border-radius: 2px;
+    }
+    
+    /* Contact Title Styles */
+    .contact-title {
+      font-size: 1.8rem;
+      text-align: center;
+      color: #2c3e50;
+      margin: 30px 0 10px;
+    }
+    
+    .contact-sub-title {
+      font-size: 1.1rem;
+      text-align: center;
+      color: #7f8c8d;
+      margin-bottom: 40px;
+    }
+    
+    /* Contact Info Items Grid */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -15px;
+      justify-content: center;
+    }
+    
+    /* Contact Info Cards */
+    .contact-info-items {
+      flex: 0 0 calc(25% - 30px);
+      margin: 15px;
+      padding: 30px 20px;
+      background: white;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: all 0.3s ease;
+    }
+    
+    .contact-info-items:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .contact-info-items a {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+    
+    .contact-info-items .icons {
+      font-size: 25px;
+      color: #3498db;
+      margin-bottom: 15px;
+    }
+    
+    .contact-info-items h4 {
+      font-size: 1.2rem;
+      color: #2c3e50;
+      margin-bottom: 10px;
+    }
+    
+    .contact-info-items p {
+      font-size: 1rem;
+      color: #7f8c8d;
+      margin: 0;
+    }
+    
+    /* Contact Form Styles */
+    .contact-form {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+    
+    .form-item {
+      margin-bottom: 20px;
+    }
+    
+    .form-group {
+      position: relative;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 15px 20px;
+      font-size: 16px;
+      border: 2px solid #e0e0e0;
+      border-radius: 10px;
+      background: white;
+      transition: all 0.3s ease;
+    }
+    
+    .form-control:focus {
+      border-color: #3498db;
+      box-shadow: 0 0 10px rgba(52, 152, 219, 0.1);
+      outline: none;
+    }
+    
+    textarea.form-control {
+      min-height: 150px;
+      resize: vertical;
+    }
+    
+    /* Submit Button */
+    .btn {
+      display: inline-block;
+      padding: 15px 40px;
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      color: white;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+    
+    .btn:hover {
+      background: linear-gradient(90deg, #2ecc71, #3498db);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(52, 152, 219, 0.3);
+    }
+    
+    /* Grid Classes */
+    .col-6 {
+      flex: 0 0 50%;
+      padding: 0 15px;
+    }
+    
+    .col-12 {
+      flex: 0 0 100%;
+      padding: 0 15px;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .contact-info-items {
+        flex: 0 0 calc(50% - 30px);
+      }
+    }
+    
+    @media (max-width: 768px) {
+      .contact .section-title h2 {
+        font-size: 2rem;
+      }
+      
+      .contact-title {
+        font-size: 1.5rem;
+      }
+      
+      .contact-info-items {
+        flex: 0 0 calc(100% - 30px);
+      }
+      
+      .col-6 {
+        flex: 0 0 100%;
+      }
+      
+      .form-control {
+        padding: 12px 15px;
+      }
+    }
+    
+    /* Animation Classes */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .contact-info-items {
+      animation: fadeInUp 0.6s ease backwards;
+    }
+    
+    .contact-info-items:nth-child(2) { animation-delay: 0.2s; }
+    .contact-info-items:nth-child(3) { animation-delay: 0.4s; }
+    .contact-info-items:nth-child(4) { animation-delay: 0.6s; }
+    </style>
+    
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <h3 class="contact-title padd-15">Any Questions?</h3>
+            <div class="row">
+                <!-- LinkedIn -->
+                <div class="contact-info-items">
+                    <a href="https://www.linkedin.com/in/sahil-a-gowda-551b32270?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
+                        <div class="icons"><i class="fa fa-linkedin"></i></div>
+                        <h4>LinkedIn</h4>
+                        <p>SahilGowda</p>
+                    </a>
+                </div>
+                <!-- Instagram -->
+                <div class="contact-info-items">
+                    <a href="https://www.instagram.com/">
+                        <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+                        <h4>Instagram</h4>
+                        <p>sahil_gowda</p>
+                    </a>
+                </div>
+                <!-- GitHub -->
+                <div class="contact-info-items">
+                    <a href="https://github.com/">
+                        <div class="icons"><i class="fa-brands fa-github"></i></div>
+                        <h4>Github</h4>
+                        <p>sahilgowda</p>
+                    </a>
+                </div>
+                <!-- Twitter -->
+                <div class="contact-info-items">
+                    <a href="https://x.com/SahilGowda2004?t=LZVD9_ySDx-s8tiDoOye6Q&s=08">
+                        <div class="icons"><i class="fa-brands fa-x-twitter"></i></div>
+                        <h4>Twitter</h4>
+                        <p>Sahilgowda</p>
+                    </a>
+                </div>
+            </div>
+            
+            <h3 class="contact-title padd-15">SEND ME AN EMAIL</h3>
+            <h4 class="contact-sub-title padd-15">I'M VERY RESPONSIVE TO MESSAGES</h4>
+            
+            <form id="contactForm" action="https://formspree.io/f/mnqevwqe" method="POST">
+                <div class="contact-form">
+                    <div class="row">
+                        <div class="form-item col-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="form-item col-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12">
+                            <div class="form-group">
+                                <textarea name="message" class="form-control" id="message" placeholder="Message" required></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-item col-12" style="text-align: center;">
+                            <button type="submit" class="btn">Send Message</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
