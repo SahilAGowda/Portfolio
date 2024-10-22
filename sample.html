@@ -1,0 +1,283 @@
+<!-- </* Project Section Base Styles */> -->
+
+<style>
+.portfolio.section {
+  padding: 60px 0;
+  background: var(--bg-black-100);
+}
+
+.portfolio .container1 {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin: auto;
+  max-width: 1200px;
+}
+
+.portfolio .section-title {
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.portfolio .row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  justify-content: center;
+}
+
+/* Portfolio Items */
+.portfolio-item {
+  flex: 0 0 calc(33.333% - 30px);
+  max-width: calc(33.333% - 30px);
+  margin: 15px;
+  cursor: pointer;
+  position: relative;
+}
+
+.portfolio-item-inner {
+  border: 6px solid var(--bg-black-100);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.portfolio-item-inner:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Image Container */
+.portfolio-img {
+  position: relative;
+  overflow: hidden;
+}
+
+.portfolio-img img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover .portfolio-img img {
+  transform: scale(1.1);
+}
+
+/* Project Info */
+.portfolio-info {
+  padding: 20px;
+  background: var(--bg-black-100);
+  border-top: 1px solid var(--bg-black-50);
+}
+
+.portfolio-info h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-black-900);
+  margin-bottom: 10px;
+}
+
+.portfolio-info .duration {
+  color: var(--text-black-700);
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Tech Stack Tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tech-tag {
+  padding: 4px 12px;
+  border-radius: 15px;
+  background: var(--skin-color);
+  color: #ffffff;
+  font-size: 12px;
+  transition: all 0.3s ease;
+}
+
+/* View Project Button */
+.view-project {
+  display: inline-block;
+  padding: 8px 20px;
+  background: var(--skin-color);
+  color: #ffffff;
+  border-radius: 20px;
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.view-project:hover {
+  background: var(--skin-color);
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1199px) {
+  .portfolio-item {
+    flex: 0 0 calc(50% - 30px);
+    max-width: calc(50% - 30px);
+  }
+}
+
+@media (max-width: 767px) {
+  .portfolio-item {
+    flex: 0 0 calc(100% - 30px);
+    max-width: calc(100% - 30px);
+  }
+  
+  .portfolio-info h3 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 575px) {
+  .tech-stack {
+    gap: 5px;
+  }
+  
+  .tech-tag {
+    padding: 3px 8px;
+    font-size: 11px;
+  }
+}
+</style>
+  
+  <section class="portfolio section" id="portfolio">
+      <div class="container">
+          <div class="row">
+              <div class="section-title padd-15">
+                  <h2>PROJECTS</h2>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Image Quality Assessment -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/image_quality_assessment.png" alt="Image Quality Assessment">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Image Quality Assessment</h3>
+                          <div class="duration">2024</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">Python</span>
+                              <span class="tech-tag">Gradio</span>
+                              <span class="tech-tag">PyQt5</span>
+                              <span class="tech-tag">Flask</span>
+                              <span class="tech-tag">ML</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- AI Workout Monitoring -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/ai_workout_monitering.png" alt="AI Workout Monitoring">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>AI Workout Monitoring</h3>
+                          <div class="duration">2023-2024</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">Python</span>
+                              <span class="tech-tag">Flask</span>
+                              <span class="tech-tag">MySQL</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Online Train Booking -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/train_booking_app.avif" alt="Online Train Booking">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Online Train Booking</h3>
+                          <div class="duration">2024</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">Bootstrap</span>
+                              <span class="tech-tag">JavaScript</span>
+                              <span class="tech-tag">Spring Boot</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Continue with the same pattern for other projects -->
+              <!-- AutoProof -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/AutoProof.png" alt="AutoProof">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>AutoProof</h3>
+                          <div class="duration">2024-present</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">React</span>
+                              <span class="tech-tag">MongoDB</span>
+                              <span class="tech-tag">Cyber Tools</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Portfolio -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/portfolio-1.jpg" alt="Portfolio">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Portfolio</h3>
+                          <div class="duration">2023</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">JavaScript</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Tic Tac Toe -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/tic_tac_toe.png" alt="Tic Tac Toe">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Tic Tac Toe</h3>
+                          <div class="duration">2023</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">JavaScript</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>

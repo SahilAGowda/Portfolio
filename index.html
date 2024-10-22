@@ -414,99 +414,398 @@
 
 
              <!-- ==== Portfolio item starts=== -->
-            <section class="portfolio section" id="portfolio">
-                <div class="container">
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>PROJECTS</h2>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="portfolio-heading padd-15">
-                            <!-- <h2>My last Projects : </h2> -->
-                        </div>
-                    </div>
-                    <div class="row">
-                        <!-- =======portfolio item starts======== --> 
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda" ><img src="images/portfolio/portfolio-9.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- =======portfolio item ends======== -->
-                          <!-- =======portfolio item starts======== --> 
-                          <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/login1.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- =======portfolio item ends======== -->
-                          <!-- =======portfolio item starts======== --> 
-                          <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/Hello.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- =======portfolio item ends======== -->
-                          <!-- =======portfolio item starts======== --> 
-                          <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/database.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- =======portfolio item ends======== -->
-                          <!-- =======portfolio item starts======== --> 
-                          <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/amazon.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- =======portfolio item ends======== -->
-                          <!-- =======portfolio item starts======== --> 
-                          <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/workout.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/tic_tac_toe.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/tic_tac_toe.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="portfolio-item">
-                            <div class="portfolio-item-inner shadow-dark">
-                                <div class="portfolio-img">
-                                    <a href="https://github.com/Sahilgowda"><img src="images/portfolio/sample.png"alt=""></a>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- =======portfolio item ends======== -->
-                    </div>
-                </div>
-                
-                
-            </section>
+            <style>
+    /* Keyframe Animations */
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+  
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+  
+    /* Base Styles */
+    .portfolio.section {
+      padding: 100px 0;
+      background: linear-gradient(135deg, #f6f9fc 0%, #f1f4f8 100%);
+      background-size: 200% 200%;
+      animation: gradientBG 15s ease infinite;
+    }
+  
+    /* .section-title {
+      text-align: center;
+      margin-bottom: 60px;
+      animation: fadeInUp 1s ease;
+    } */
+  
+    /* .section-title h2 {
+      font-size: 3rem;
+      font-weight: 800;
+      color: #1a237e;
+      position: relative;
+      display: inline-block;
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+  
+    .section-title h2::after {
+      content: '';
+      position: absolute;
+      width: 70%;
+      height: 4px;
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      bottom: 0;
+      left: 15%;
+      border-radius: 2px;
+      transition: width 0.3s ease;
+    }
+  
+    .section-title:hover h2::after {
+      width: 100%;
+      left: 0;
+    }
+   */
+    /* Grid Layout */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -20px;
+      justify-content: center;
+    }
+  
+    /* Portfolio Items */
+    .portfolio-item {
+      flex: 0 0 calc(33.333% - 40px);
+      margin: 20px;
+      perspective: 1000px;
+      animation: fadeInUp 0.6s ease backwards;
+    }
+  
+    .portfolio-item:nth-child(2) { animation-delay: 0.2s; }
+    .portfolio-item:nth-child(3) { animation-delay: 0.4s; }
+    .portfolio-item:nth-child(4) { animation-delay: 0.6s; }
+    .portfolio-item:nth-child(5) { animation-delay: 0.8s; }
+    .portfolio-item:nth-child(6) { animation-delay: 1s; }
+  
+    .portfolio-item-inner {
+      position: relative;
+      border-radius: 15px;
+      overflow: hidden;
+      background: #fff;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-style: preserve-3d;
+    }
+  
+    .portfolio-item:hover .portfolio-item-inner {
+      transform: translateY(-10px) rotateX(5deg);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    }
+  
+    /* Image Styles */
+    .portfolio-img {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .portfolio-img::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, rgba(171, 221, 255, 0.9), rgba(255, 255, 255, 0.9));
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      z-index: 1;
+    }
+  
+    .portfolio-item:hover .portfolio-img::before {
+      opacity: 0.7;
+    }
+  
+    .portfolio-img img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  
+    .portfolio-item:hover .portfolio-img img {
+      transform: scale(1.1);
+    }
+  
+    /* Project Info */
+    .portfolio-info {
+      padding: 25px;
+      background: #fff;
+      position: relative;
+      z-index: 2;
+    }
+  
+    .portfolio-info h3 {
+      font-size: 1.4rem;
+      font-weight: 700;
+      color: #2c3e50;
+      margin-bottom: 12px;
+      transform: translateY(0);
+      transition: transform 0.3s ease;
+    }
+  
+    .portfolio-item:hover .portfolio-info h3 {
+      transform: translateY(-5px);
+      color: #3498db;
+    }
+  
+    .portfolio-info .duration {
+      font-size: 0.95rem;
+      color: #7f8c8d;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+  
+    .duration::before {
+      content: '🕒';
+      font-size: 1rem;
+    }
+  
+    .portfolio-info .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+  
+    .tech-tag {
+      padding: 5px 12px;
+      border-radius: 20px;
+      background: #f0f4f8;
+      color: #3498db;
+      font-size: 0.85rem;
+      transition: all 0.3s ease;
+    }
+  
+    .portfolio-item:hover .tech-tag {
+      background: #3498db;
+      color: #fff;
+      transform: scale(1.05);
+    }
+  
+    /* View Project Button */
+    .view-project {
+      display: inline-block;
+      padding: 8px 20px;
+      margin-top: 15px;
+      background: linear-gradient(90deg, #3498db, #2ecc71);
+      color: #fff;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: all 0.3s ease;
+    }
+  
+    .portfolio-item:hover .view-project {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  
+    .view-project:hover {
+      background: linear-gradient(90deg, #2ecc71, #3498db);
+      box-shadow: 0 5px 15px rgba(46, 204, 113, 0.4);
+    }
+  
+    /* Responsive Design */
+    @media (max-width: 1200px) {
+      .portfolio-item {
+        flex: 0 0 calc(50% - 40px);
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .portfolio-item {
+        flex: 0 0 calc(100% - 40px);
+      }
+      /* .section-title h2 {
+        font-size: 2.5rem;
+      } */
+    }
+  
+    /* Loading Animation */
+    .loading-animation {
+      position: relative;
+      overflow: hidden;
+    }
+  
+    .loading-animation::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 50%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      animation: loading 1.5s infinite;
+    }
+  
+    @keyframes loading {
+      0% { left: -100%; }
+      100% { left: 200%; }
+    }
+  </style>
+  
+  <section class="portfolio section" id="portfolio">
+      <div class="container1">
+          <div class="row">
+              <div class="section-title padd-15">
+                  <h2>PROJECTS</h2>
+              </div>
+          </div>
+          <div class="row">
+              <!-- Image Quality Assessment -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/image_quality_assessment.png" alt="Image Quality Assessment">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Image Quality Assessment</h3>
+                          <div class="duration">2024</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">Python</span>
+                              <span class="tech-tag">Gradio</span>
+                              <span class="tech-tag">PyQt5</span>
+                              <span class="tech-tag">Flask</span>
+                              <span class="tech-tag">ML</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- AI Workout Monitoring -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/ai_workout_monitering.png" alt="AI Workout Monitoring">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>AI Workout Monitoring</h3>
+                          <div class="duration">2023-2024</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">Python</span>
+                              <span class="tech-tag">Flask</span>
+                              <span class="tech-tag">MySQL</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Online Train Booking -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/train_booking_app.avif" alt="Online Train Booking">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Online Train Booking</h3>
+                          <div class="duration">2024</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">Bootstrap</span>
+                              <span class="tech-tag">JavaScript</span>
+                              <span class="tech-tag">Spring Boot</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Continue with the same pattern for other projects -->
+              <!-- AutoProof -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/AutoProof.png" alt="AutoProof">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>AutoProof</h3>
+                          <div class="duration">2024-present</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">React</span>
+                              <span class="tech-tag">MongoDB</span>
+                              <span class="tech-tag">Cyber Tools</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Portfolio -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/portfolio-1.jpg" alt="Portfolio">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Portfolio</h3>
+                          <div class="duration">2023</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">JavaScript</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+  
+              <!-- Tic Tac Toe -->
+              <div class="portfolio-item">
+                  <div class="portfolio-item-inner shadow-dark">
+                      <div class="portfolio-img">
+                          <img src="images/portfolio/tic_tac_toe.png" alt="Tic Tac Toe">
+                      </div>
+                      <div class="portfolio-info">
+                          <h3>Tic Tac Toe</h3>
+                          <div class="duration">2023</div>
+                          <div class="tech-stack">
+                              <span class="tech-tag">HTML</span>
+                              <span class="tech-tag">CSS</span>
+                              <span class="tech-tag">JavaScript</span>
+                          </div>
+                          <a href="https://github.com/Sahilgowda" class="view-project">View Project</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
            
 
              <!-- ==== Portfolio section  ends=== -->
