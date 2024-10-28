@@ -109,7 +109,7 @@
                                     <div class="row">
                                         <div class="buttons">
                                             <!-- <a href="#" class="btn">Download CV</a> -->
-                                            <a href="#contact" data-section-index="1" class="btn hire-me">Hire Me</a>
+                                            <a href="#contact" data-section-index="1" class="btn hire-me" style="margin: 50px;">Hire Me</a>
                                         </div>
                                     </div>
                                 </div>
@@ -123,24 +123,24 @@
                                             </div>
                                         </div>
                                         <div class="skill-item">
-                                            <h5>HTML</h5>
+                                            <h5>Python</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 89%;"> </div>
-                                                <div class="skill-percent">89%</div>
+                                                <div class="skill-percent">78%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item">
-                                            <h5>CSS</h5>
+                                            <h5>Spring-Boot</h5>
                                             <div class="progress">
                                                 <div class="progress-in" style="width: 86%;"> </div>
                                                 <div class="skill-percent">86%</div>
                                             </div>
                                         </div>
                                         <div class="skill-item">
-                                            <h5>JS</h5>
+                                            <h5>JavaScript</h5>
                                             <div class="progress">
-                                                <div class="progress-in" style="width: 56%;"> </div>
-                                                <div class="skill-percent">56%</div>
+                                                <div class="progress-in" style="width: 90%;"> </div>
+                                                <div class="skill-percent">90%</div>
                                             </div>
                                         </div>
                                     </div>
@@ -251,7 +251,7 @@
                                 <!-- <div class="icon">
                                     <i class="fa-brands fa-hackerrank"></i>
                                 </div> -->
-                                <a href="https://www.hackerrank.com/dashboard">
+                                <a href="https://www.hackerrank.com/dashboard" target="_blank">
                                
                                 <img src="images/portfolio/hackerrank.PNG" >
                                 <!-- <h4>Hacker Rank</h4> -->
@@ -266,7 +266,7 @@
                                     <iconify-icon icon="simple-icons:leetcode"></iconify-icon>
                                 </div> -->
                                 <!-- <h4>Leet Code</h4> -->
-                                <a href="https://leetcode.com/">
+                                <a href="https://leetcode.com/" target="_blank">
                                 <img src="images/portfolio/leetcode_logo.PNG">
                                 <p>LeetCode is the best platform to help you enhance your skills, expand your knowledge and prepare for technical interviews
                                     
@@ -282,7 +282,7 @@
                                     <i class="fa-brands fa-hackerrank"></i>
                                 </div>
                                 <h4>Hacker earth</h4> -->
-                                <a href="https://www.hackerearth.com/challenges/">
+                                <a href="https://www.hackerearth.com/challenges/" target="_blank">
                                 <img src="images/portfolio/hackerearth_logo.PNG">
                                 <p>HackerEarth is an online technical-recruitment tool that enables you to automate your hiring process to select the best fit for your team
                                     
@@ -295,7 +295,7 @@
                                     <i class="fa-solid fa-user-ninja"></i>
                                 </div>
                                 <h4>Coding Ninjas</h4> -->
-                                <a href="https://www.codingninjas.com/">
+                                <a href="https://www.codingninjas.com/" target="_blank">
                                 <img class ="logo_image"src="images/portfolio/Coding_ninjas.PNG">
                                 <p>A 3-stage learning model to turn you into a Coding Ninja ; Learn. Experience seamless learning with problem solving modules, leaderboard and awards
                                     
@@ -308,7 +308,7 @@
                                 <!-- <div class="icon">
                                     <i class="fa-brands fa-hackerrank"></i> -->
                                 <!-- </div> -->
-                                <a href="https://www.codechef.com/users/sahilgowda204">
+                                <a href="https://www.codechef.com/users/sahilgowda204" target="_blank">
                                
                                 <img src="images/portfolio/codechef_logo.PNG" >
                                 <!-- <h4>Hacker Rank</h4> -->
@@ -326,8 +326,8 @@
                                 <div class="icon">
                                     <i class="fa fa-code"></i>
                                 </div>
-                                <h4>Hello World</h4>
-                                <p>Lorem ipsum dolor, sit amet consectetur adipt expedita quidem voluptatem lorem
+                                <h4>UI Design</h4>
+                                <p>I specialize in creating intuitive and visually appealing user interfaces that enhance user experience and engagement.
                                     
                                 </p>
                             </div>
@@ -340,8 +340,8 @@
                                     <i class="fa fa-laptop-code"></i>
                                 </div>
                                 <h4>Web Designing</h4>
-                                <p>I have hands on Experience of web Designing check out the project section... </p>
-                                    
+                                <p>
+                                    I create responsive and visually appealing websites, ensuring a seamless user experience across all devices.                                    
                                 </p>
                             </div>
                         </div>
@@ -350,10 +350,11 @@
                          <div class="service-item padd-15">
                             <div class="service-item-inner">
                                 <div class="icon">
-                                    <i class="fa fa-palette"></i>
+                                    <i class="fa fa-robot"></i>
                                 </div>
-                                <h4>Logo Designing</h4>
-                                <p>I have a good knowledge of logo Designing for any work contack me....I                                  
+                                <h4>ML Model Deployment</h4>
+                                <!-- <h4>Machine Learning Model Deployment</h4> -->
+                                <p>I specialize in deploying machine learning models to production environments, ensuring they are scalable and efficient.
                                 </p>
                             </div>
                         </div>
@@ -666,7 +667,7 @@
       left: -100%;
       width: 50%;
       height: 100%;
-      background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+      background: linear-gradient(  90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
       animation: loading 1.5s infinite;
     }
   
@@ -674,16 +675,23 @@
       0% { left: -100%; }
       100% { left: 200%; }
     }
+    .row1{
+        display: flex;
+      flex-wrap: wrap;
+      margin: -20px;
+      justify-content: center;
+      margin-left: 20px;
+    }
   </style>
   
   <section class="portfolio section" id="portfolio">
       <div class="container1">
-          <div class="row">
+          <div class="row1">
               <div class="section-title padd-15">
                   <h2>PROJECTS</h2>
               </div>
           </div>
-          <div class="row">
+          <div class="row1">
               <!-- Image Quality Assessment -->
               <div class="portfolio-item">
                   <div class="portfolio-item-inner shadow-dark">
@@ -814,12 +822,12 @@
               <section class="contact section" id="contact" style="padding: 80px 0; background-color: #f5f5f5;">
                 <div class="container" style="max-width: 1140px; margin: 0 auto; padding: 0 15px;">
                     <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; margin-bottom: 50px;">
-                        <div class="section-title" style="width: 100%; text-align: center; margin-bottom: 60px;">
+                        <div class="section-title" style="width: 100%; text-align: left; margin-bottom: 20px;">
                             <h2 style="font-size: 40px; font-weight: 700; color: #302e4d; position: relative; margin-bottom: 30px;">Contact Me</h2>
                         </div>
                     </div>
                     
-                    <h3 style="font-size: 28px; font-weight: 600; color: #302e4d; text-align: center; margin-bottom: 20px;">Any Questions?</h3>
+                    <h3 style="font-size: 28px; font-weight: 600; color: #302e4d; text-align: center; margin-bottom: 40px;">Any Questions?</h3>
                     
                     <div class="row" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 30px; margin-bottom: 50px;">
                         <!-- LinkedIn -->
@@ -877,7 +885,7 @@
                                 <textarea name="message" class="form-control" id="message" placeholder="Message" style="width: 100%; height: 150px; border: 1px solid #d4d4e3; border-radius: 25px; padding: 25px; color: #504e70; background: #fff; transition: all 0.3s ease; resize: none;"></textarea>
                             </div>
                             <div class="form-item" style="flex: 0 0 100%; padding: 15px; text-align: center;">
-                                <button type="submit" style="background: #302e4d; color: #fff; border: none; border-radius: 25px; padding: 12px 35px; font-size: 16px; font-weight: 500; transition: all 0.3s ease; cursor: pointer;">Send Message</button>
+                                <button type="submit" style="background: #EC1839; color: #fff; border: none; border-radius: 25px; padding: 12px 35px; font-size: 24px; font-weight: 500; transition: all 0.3s ease; cursor: pointer;">Send Message</button>
                             </div>
                         </div>
                     </form>
