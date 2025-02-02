@@ -241,8 +241,8 @@ ul{
 }
 
 .nav-toggle{
-    height: 140px;
-    width: 140px;
+    height: 51px;
+    width:  51px;
     border: 1px solid var(--bg-black-50);
     cursor: pointer;
     position: fixed;
